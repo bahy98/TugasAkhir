@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apotek.moklet.ArsipDanKatalogObatController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="622.0" stroke="BLACK" strokeType="INSIDE" width="487.0">
+         <fill>
+            <LinearGradient endX="0.8047619047619048" endY="1.0" startX="0.14761904761904762" startY="0.3238095238095238">
+               <stops>
+                  <Stop color="#deff1f" />
+                  <Stop color="#deff1f" offset="0.007662835249042145" />
+                  <Stop color="#45c62f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="95.0" layoutY="41.0" text="Katalog dan Arsip Obat">
+         <font>
+            <Font name="Franklin Gothic Medium" size="30.0" />
+         </font>
+      </Label>
+      <Button id="DataBaru" fx:id="DataBaru" layoutX="95.0" layoutY="539.0" mnemonicParsing="false" onAction="#DataBaru" prefHeight="51.0" prefWidth="122.0" text="Data Baru" />
+      <Button id="HalamanAwal" fx:id="HalamanAwal" layoutX="277.0" layoutY="539.0" mnemonicParsing="false" onAction="#HalamanAwal" prefHeight="51.0" prefWidth="122.0" text="Halaman Awal" />
+      <TableView id="tabelobat" fx:id="tabelobat" layoutX="29.0" layoutY="84.0" prefHeight="435.0" prefWidth="430.0" />
+   </children>
+</AnchorPane>
